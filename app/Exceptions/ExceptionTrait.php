@@ -33,13 +33,13 @@ trait ExceptionTrait
 
 	protected function ModelResponse($e) { 
 		return response()->json([ 'errors' =>
-		'無此商品' ],Response::HTTP_NOT_FOUND); 
+		'無此商品或評論' ],Response::HTTP_NOT_FOUND); 
 	}
 
 	protected function HttpResponse($e)
 	{
 		return response()->json([
-                    'errors' => '找不到路由'
+                    'errors' => '找不到此頁面'
                 ],Response::HTTP_NOT_FOUND);
 	}
 }

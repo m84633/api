@@ -16,6 +16,10 @@ class ReviewController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(){
+        // $this->middleware('auth:api')->except('index');
+    }
+
     public function index(Product $product)
     {
         return ReviewResource::collection($product->reviews()->paginate(2));

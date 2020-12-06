@@ -10,4 +10,5 @@ npm-debug.log
 yarn-error.log
 .env
 README.md
+sftp-config.json
 
